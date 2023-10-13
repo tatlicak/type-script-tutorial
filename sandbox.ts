@@ -1,14 +1,23 @@
-const character = 'mario'
+let character = 'mario';
+let age = 30;
+let isBlackBelt = false;
 
-console.log(character)
+//type can not be changed
+//character = 20;
 
-const inputs = document.querySelectorAll('input')
+character = 'luigi';
 
-console.log('inputs')
+age = 40.0;
 
-inputs.forEach(input => {
+isBlackBelt = true;
 
-    console.log(input.id)
-    
-});
+//type is checking in compile time for develpment not in runtime
+const circ = (diameter:number) => {
+
+    return diameter * Math.PI
+
+}
+
+console.log(circ(7.5));
+
 
